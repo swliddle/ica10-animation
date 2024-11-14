@@ -1,0 +1,89 @@
+/* SET UP */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  height: auto;
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 80px;
+  font-size: 20px;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  margin-left: 1em;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul a {
+  /* no underline */
+  text-decoration: none;
+  color: #f4f4f4;
+  margin-left: 2em;
+}
+
+ul a:hover {
+  /* text shadow of #87b0fc */
+  text-shadow: 0 0 5px #87b0fc;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+main {
+  height: calc(100vh - 80px);
+  overflow-x: hidden;
+}
+
+section#grid-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+main .center-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.center-grid .box {
+  height: 250px;
+  width: 250px;
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.center-grid .box-1 {
+  background-color: transparent;
+}
+
+/* YOU MAY EDIT THE STYLES ABOVE BUT */
